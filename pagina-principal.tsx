@@ -1,15 +1,31 @@
-// Importar componentes necesarios
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Badge } from "@/components/ui/badge"
-// Importar iconos
-import { Home, MapPin, Phone, Mail, Star, Bed, Bath, Square, CheckCircle, Users, Award, TrendingUp } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Badge } from "@/components/ui/badge";
+import {
+  Home,
+  MapPin,
+  Phone,
+  Mail,
+  Star,
+  Bed,
+  Bath,
+  Square,
+  CheckCircle,
+  Users,
+  Award,
+  TrendingUp,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-// Componente principal de la página
 export default function PaginaInicio() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -17,19 +33,33 @@ export default function PaginaInicio() {
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white sticky top-0 z-50 shadow-sm">
         <Link href="/" className="flex items-center justify-center">
           <Home className="h-8 w-8 text-emerald-600" />
-          <span className="ml-2 text-xl font-bold text-gray-900">Inmobiliaria Central</span>
+          <span className="ml-2 text-xl font-bold text-gray-900">
+            Inmobiliaria Central
+          </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#propiedades" className="text-sm font-medium hover:text-emerald-600 transition-colors">
+          <Link
+            href="#propiedades"
+            className="text-sm font-medium hover:text-emerald-600 transition-colors"
+          >
             Propiedades
           </Link>
-          <Link href="#servicios" className="text-sm font-medium hover:text-emerald-600 transition-colors">
+          <Link
+            href="#servicios"
+            className="text-sm font-medium hover:text-emerald-600 transition-colors"
+          >
             Servicios
           </Link>
-          <Link href="#nosotros" className="text-sm font-medium hover:text-emerald-600 transition-colors">
+          <Link
+            href="#nosotros"
+            className="text-sm font-medium hover:text-emerald-600 transition-colors"
+          >
             Nosotros
           </Link>
-          <Link href="#contacto" className="text-sm font-medium hover:text-emerald-600 transition-colors">
+          <Link
+            href="#contacto"
+            className="text-sm font-medium hover:text-emerald-600 transition-colors"
+          >
             Contacto
           </Link>
         </nav>
@@ -46,12 +76,15 @@ export default function PaginaInicio() {
                     Tu casa soñada te espera
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl">
-                    Más de 10 años ayudando a familias a encontrar la propiedad perfecta. Expertos en compra, venta y
-                    alquiler de inmuebles.
+                    Más de 10 años ayudando a familias a encontrar la propiedad
+                    perfecta. Expertos en compra, venta y alquiler de inmuebles.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+                  <Button
+                    size="lg"
+                    className="bg-emerald-600 hover:bg-emerald-700"
+                  >
                     Ver Propiedades
                   </Button>
                   <Button variant="outline" size="lg">
@@ -88,14 +121,18 @@ export default function PaginaInicio() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <Badge variant="secondary" className="bg-emerald-100 text-emerald-800">
+                <Badge
+                  variant="secondary"
+                  className="bg-emerald-100 text-emerald-800"
+                >
                   Propiedades Destacadas
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Las mejores oportunidades del mercado
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Selección exclusiva de propiedades con las mejores ubicaciones y precios competitivos
+                  Selección exclusiva de propiedades con las mejores ubicaciones
+                  y precios competitivos
                 </p>
               </div>
             </div>
@@ -110,11 +147,17 @@ export default function PaginaInicio() {
                     alt="Casa moderna en Las Condes con diseño contemporáneo"
                     className="aspect-video w-full object-cover"
                   />
-                  <Badge className="absolute top-2 left-2 bg-emerald-600">En Venta</Badge>
-                  <Badge className="absolute top-2 right-2 bg-red-600">Nuevo</Badge>
+                  <Badge className="absolute top-2 left-2 bg-emerald-600">
+                    En Venta
+                  </Badge>
+                  <Badge className="absolute top-2 right-2 bg-red-600">
+                    Nuevo
+                  </Badge>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Casa Moderna en Las Condes</CardTitle>
+                  <CardTitle className="text-xl">
+                    Casa Moderna en Las Condes
+                  </CardTitle>
                   <CardDescription className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />
                     Las Condes, Santiago
@@ -122,7 +165,9 @@ export default function PaginaInicio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-bold text-emerald-600">$450.000.000</span>
+                    <span className="text-2xl font-bold text-emerald-600">
+                      $450.000.000
+                    </span>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-1">
@@ -154,10 +199,14 @@ export default function PaginaInicio() {
                     alt="Departamento moderno en Providencia con vista panorámica"
                     className="aspect-video w-full object-cover"
                   />
-                  <Badge className="absolute top-2 left-2 bg-orange-600">Arriendo</Badge>
+                  <Badge className="absolute top-2 left-2 bg-orange-600">
+                    Arriendo
+                  </Badge>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Departamento Providencia</CardTitle>
+                  <CardTitle className="text-xl">
+                    Departamento Providencia
+                  </CardTitle>
                   <CardDescription className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />
                     Providencia, Santiago
@@ -165,7 +214,9 @@ export default function PaginaInicio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-bold text-emerald-600">$850.000/mes</span>
+                    <span className="text-2xl font-bold text-emerald-600">
+                      $850.000/mes
+                    </span>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-1">
@@ -197,7 +248,9 @@ export default function PaginaInicio() {
                     alt="Casa familiar en Ñuñoa con jardín y espacios amplios"
                     className="aspect-video w-full object-cover"
                   />
-                  <Badge className="absolute top-2 left-2 bg-emerald-600">En Venta</Badge>
+                  <Badge className="absolute top-2 left-2 bg-emerald-600">
+                    En Venta
+                  </Badge>
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">Casa Familiar Ñuñoa</CardTitle>
@@ -208,7 +261,9 @@ export default function PaginaInicio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-bold text-emerald-600">$320.000.000</span>
+                    <span className="text-2xl font-bold text-emerald-600">
+                      $320.000.000
+                    </span>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-1">
@@ -233,7 +288,9 @@ export default function PaginaInicio() {
 
             {/* Galería adicional de propiedades */}
             <div className="mt-12">
-              <h3 className="text-2xl font-bold text-center mb-8">Más propiedades disponibles</h3>
+              <h3 className="text-2xl font-bold text-center mb-8">
+                Más propiedades disponibles
+              </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="relative group cursor-pointer">
                   <Image
@@ -297,16 +354,25 @@ export default function PaginaInicio() {
         </section>
 
         {/* Servicios */}
-        <section id="servicios" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section
+          id="servicios"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <Badge variant="secondary" className="bg-emerald-100 text-emerald-800">
+                <Badge
+                  variant="secondary"
+                  className="bg-emerald-100 text-emerald-800"
+                >
                   Nuestros Servicios
                 </Badge>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Te acompañamos en todo el proceso</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Te acompañamos en todo el proceso
+                </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Servicios integrales de bienes raíces con el respaldo de profesionales expertos
+                  Servicios integrales de bienes raíces con el respaldo de
+                  profesionales expertos
                 </p>
               </div>
             </div>
@@ -315,7 +381,9 @@ export default function PaginaInicio() {
                 <CardHeader className="text-center">
                   <Home className="h-12 w-12 mx-auto text-emerald-600 mb-4" />
                   <CardTitle>Compra y Venta</CardTitle>
-                  <CardDescription>Asesoría completa para la compra o venta de tu propiedad</CardDescription>
+                  <CardDescription>
+                    Asesoría completa para la compra o venta de tu propiedad
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -339,7 +407,9 @@ export default function PaginaInicio() {
                 <CardHeader className="text-center">
                   <TrendingUp className="h-12 w-12 mx-auto text-emerald-600 mb-4" />
                   <CardTitle>Inversiones</CardTitle>
-                  <CardDescription>Oportunidades de inversión inmobiliaria rentables</CardDescription>
+                  <CardDescription>
+                    Oportunidades de inversión inmobiliaria rentables
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -363,7 +433,9 @@ export default function PaginaInicio() {
                 <CardHeader className="text-center">
                   <Users className="h-12 w-12 mx-auto text-emerald-600 mb-4" />
                   <CardTitle>Arriendos</CardTitle>
-                  <CardDescription>Gestión integral de propiedades en arriendo</CardDescription>
+                  <CardDescription>
+                    Gestión integral de propiedades en arriendo
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -392,13 +464,18 @@ export default function PaginaInicio() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <Badge variant="secondary" className="bg-emerald-100 text-emerald-800 w-fit">
+                  <Badge
+                    variant="secondary"
+                    className="bg-emerald-100 text-emerald-800 w-fit"
+                  >
                     ¿Por qué InmoVentas?
                   </Badge>
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">La experiencia que necesitas</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    La experiencia que necesitas
+                  </h2>
                   <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed">
-                    Más de una década en el mercado inmobiliario nos respalda. Conocemos cada detalle del proceso y te
-                    guiamos paso a paso.
+                    Más de una década en el mercado inmobiliario nos respalda.
+                    Conocemos cada detalle del proceso y te guiamos paso a paso.
                   </p>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
@@ -446,18 +523,25 @@ export default function PaginaInicio() {
         </section>
 
         {/* Contacto */}
-        <section id="contacto" className="w-full py-12 md:py-24 lg:py-32 bg-emerald-50">
+        <section
+          id="contacto"
+          className="w-full py-12 md:py-24 lg:py-32 bg-emerald-50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <Badge variant="secondary" className="bg-emerald-100 text-emerald-800">
+                <Badge
+                  variant="secondary"
+                  className="bg-emerald-100 text-emerald-800"
+                >
                   Contacto
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   ¿Listo para encontrar tu hogar ideal?
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Contáctanos hoy mismo y recibe asesoría personalizada sin compromiso
+                  Contáctanos hoy mismo y recibe asesoría personalizada sin
+                  compromiso
                 </p>
               </div>
             </div>
@@ -465,7 +549,10 @@ export default function PaginaInicio() {
               <Card className="shadow-lg">
                 <CardHeader>
                   <CardTitle>Envíanos un mensaje</CardTitle>
-                  <CardDescription>Completa el formulario y te contactaremos en menos de 24 horas</CardDescription>
+                  <CardDescription>
+                    Completa el formulario y te contactaremos en menos de 24
+                    horas
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
@@ -486,41 +573,57 @@ export default function PaginaInicio() {
                     <label className="text-sm font-medium">Mensaje</label>
                     <Textarea placeholder="Cuéntanos qué tipo de propiedad buscas..." />
                   </div>
-                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Enviar Mensaje</Button>
+                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
+                    Enviar Mensaje
+                  </Button>
                 </CardContent>
               </Card>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Información de Contacto</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    Información de Contacto
+                  </h3>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Phone className="h-5 w-5 text-emerald-600" />
                       <div>
                         <p className="font-medium">+56 9 1234 5678</p>
-                        <p className="text-sm text-gray-600">Lunes a Viernes 9:00 - 18:00</p>
+                        <p className="text-sm text-gray-600">
+                          Lunes a Viernes 9:00 - 18:00
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <Mail className="h-5 w-5 text-emerald-600" />
                       <div>
                         <p className="font-medium">contacto@inmoventas.cl</p>
-                        <p className="text-sm text-gray-600">Respuesta en 24 horas</p>
+                        <p className="text-sm text-gray-600">
+                          Respuesta en 24 horas
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <MapPin className="h-5 w-5 text-emerald-600" />
                       <div>
-                        <p className="font-medium">Av. Providencia 1234, Of. 56</p>
-                        <p className="text-sm text-gray-600">Providencia, Santiago</p>
+                        <p className="font-medium">
+                          Av. Providencia 1234, Of. 56
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Providencia, Santiago
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h4 className="font-semibold mb-2">¿Necesitas ayuda inmediata?</h4>
-                  <p className="text-sm text-gray-600 mb-4">Nuestro equipo está disponible para atenderte</p>
+                  <h4 className="font-semibold mb-2">
+                    ¿Necesitas ayuda inmediata?
+                  </h4>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Nuestro equipo está disponible para atenderte
+                  </p>
                   <Button variant="outline" className="w-full">
                     <Phone className="h-4 w-4 mr-2" />
                     Llamar Ahora
@@ -539,17 +642,24 @@ export default function PaginaInicio() {
           <span className="font-semibold">InmoVentas</span>
         </div>
         <p className="text-xs text-gray-400 sm:ml-auto">
-          © {new Date().getFullYear()} InmoVentas. Todos los derechos reservados.
+          © {new Date().getFullYear()} InmoVentas. Todos los derechos
+          reservados.
         </p>
         <nav className="flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:text-emerald-400 transition-colors">
+          <Link
+            href="#"
+            className="text-xs hover:text-emerald-400 transition-colors"
+          >
             Términos de Servicio
           </Link>
-          <Link href="#" className="text-xs hover:text-emerald-400 transition-colors">
+          <Link
+            href="#"
+            className="text-xs hover:text-emerald-400 transition-colors"
+          >
             Privacidad
           </Link>
         </nav>
       </footer>
     </div>
-  )
+  );
 }
