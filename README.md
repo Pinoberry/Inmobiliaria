@@ -2,7 +2,7 @@
 
 Aplicación web para una inmobiliaria desarrollada con Next.js, TypeScript y Tailwind CSS.
 
-## 🚀 Características
+## Características
 
 - Interfaz moderna y responsiva
 - Navegación fluida entre secciones
@@ -11,14 +11,14 @@ Aplicación web para una inmobiliaria desarrollada con Next.js, TypeScript y Tai
 - Tipado estático con TypeScript
 - Estilos con Tailwind CSS
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - [Next.js](https://nextjs.org/) - Framework de React
 - [TypeScript](https://www.typescriptlang.org/) - JavaScript tipado
 - [Tailwind CSS](https://tailwindcss.com/) - Framework de estilos
 - [shadcn/ui](https://ui.shadcn.com/) - Componentes de UI accesibles
 
-## 📦 Instalación
+## Instalación
 
 1. Clona el repositorio:
    ```bash
@@ -46,7 +46,7 @@ Aplicación web para una inmobiliaria desarrollada con Next.js, TypeScript y Tai
 
 4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Inmobiliaria/
@@ -63,7 +63,7 @@ Inmobiliaria/
 └── tsconfig.json        # Configuración de TypeScript
 ```
 
-## 🌐 Despliegue
+## Despliegue
 
 El proyecto está configurado para desplegarse en Vercel. Realiza un push a la rama `main` para desplegar automáticamente.
 
