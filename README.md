@@ -29,18 +29,14 @@ Aplicación web para una inmobiliaria desarrollada con Next.js, TypeScript y Tai
 2. Instala las dependencias:
    ```bash
    npm install
-   # o
    pnpm install
-   # o
    yarn install
    ```
 
 3. Inicia el servidor de desarrollo:
    ```bash
    npm run dev
-   # o
    pnpm dev
-   # o
    yarn dev
    ```
 
@@ -63,7 +59,4 @@ Inmobiliaria/
 └── tsconfig.json        # Configuración de TypeScript
 ```
 
-## Despliegue
-
-El proyecto está configurado para desplegarse en Vercel. Realiza un push a la rama `main` para desplegar automáticamente.
 
